@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var newMateria = require('./Schemas/user_Schema');
 
 var app = express();
 
@@ -15,12 +16,12 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function callback () {
+db.once('open', function () {
   console.log("Mongoose Connection");
 });
 
 exports.test = function(req,res) {
-  console.log("db Connected");
+  
 };
 
 
@@ -36,7 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.post('/materia', newMateria);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -53,6 +54,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 
 module.exports = app;

@@ -8,11 +8,12 @@ html
 block content
   header() Administrador de Notas
 
-  form(class="formulario" action="/register", method="post")
-    input(type="text" placeholder="Materia")
-    input(type="text" placeholder="UV")
-    input(type="text" placeholder="Descripcion")
-    button(type="submit") Guardar
+  div
+    form(class="formulario" action="/register", method="post")
+      input(id="form" type="text" placeholder="Materia")
+      input(id="form" type="text" placeholder="UV")
+      input(id="form" type="text" placeholder="Descripcion")
+      button(id="form" type="submit") Guardar
   
   div
     ul(class="cabecera")

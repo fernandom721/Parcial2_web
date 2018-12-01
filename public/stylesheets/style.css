@@ -21,9 +21,16 @@ header{
 }
 
 .formulario{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
   background-color: #E4E9EE;
   width: 1440px;
-  height: 216px;
+  height: 80px;
+}
+.formulario #form{
+  margin-top: 30px;
+  margin-right: 1em;
+  height: 25px;
 }
 
 .cabecera{

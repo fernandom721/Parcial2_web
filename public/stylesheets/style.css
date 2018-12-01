@@ -20,6 +20,12 @@ header{
   text-align: center;
 }
 
+.formulario{
+  background-color: #E4E9EE;
+  width: 1440px;
+  height: 216px;
+}
+
 .cabecera{
   display: grid;
   grid-template-columns: repeat(5,1fr);

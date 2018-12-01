@@ -3,19 +3,19 @@ doctype html
 html
   head
     link(rel="stylesheet", href="/stylesheets/style.css")
-    title Administrador de Tareas
+    title Administrador de Notas
 
 block content
-  header() Administrador de tareas
+  header() Administrador de Notas
 
-  form(action="#", method="post")
+  form(class="formulario" action="#", method="post")
     input(type="text" placeholder="Materia")
     input(type="text" placeholder="UV")
     input(type="text" placeholder="Descripcion")
     button(type="submit") Guardar
   
   div
-    ul(.cabecera)
+    ul(class="cabecera")
       li() #
       li() Materia
       li() UV

@@ -12,7 +12,7 @@ header{
   width: 1440px;
   height: 60px;
   color: #47525E;
-  font-family: Berkshire Swash;
+  font-family: 'Mountains of Christmas', cursive;
   font-size: 28px;
   font-weight: 400;
   line-height: 34px;
@@ -21,8 +21,6 @@ header{
 }
 
 .formulario{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
   background-color: #E4E9EE;
   width: 1440px;
   height: 80px;
@@ -31,10 +29,18 @@ header{
   margin-top: 30px;
   margin-right: 1em;
   height: 25px;
+  width: 185px;
 }
 
 .cabecera{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   list-style: none;
+}
+
+button{
+  border-radius: 4px;
+  background-color: green;
+  border-style: none;
+  color: white;
 }

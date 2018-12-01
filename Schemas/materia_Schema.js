@@ -7,5 +7,4 @@ var materiaSchema = new mongoose.Schema({
     descripcio:String
 });
 
-
 module.exports = restful.model('materia', materiaSchema);

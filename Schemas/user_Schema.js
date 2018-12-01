@@ -1,9 +1,11 @@
-var erro = require('http-errors');
-var mongoose = require('mongoose');
+var restful = require('node-restful');
+var mongoose = restful.mongoose;
 
 var materiaSchema = new mongoose.Schema({
-    Nombre: string,
-    uv: int,
-    descripcio: string
+    Nombre:String,
+    uv:String,
+    descripcio:String
 });
 
+
+module.exports = restful.model('materia', materiaSchema);

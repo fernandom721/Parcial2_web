@@ -1,15 +1,23 @@
 doctype html
 
-html(lang='es')
+html
   head
-    meta( charset="utf-8")
-    meta( name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel="stylesheet", href="/stylesheets/style.css")
     title Administrador de Tareas
 
-  header(.container)
-    p(.bg-warning) Administrador de tareas
+block content
+  header() Administrador de tareas
 
-  body
-
-    
+  form(action="#", method="post")
+    input(type="text" placeholder="Materia")
+    input(type="text" placeholder="UV")
+    input(type="text" placeholder="Descripcion")
+    button(type="submit") Guardar
+  
+  div
+    ul(.cabecera)
+      li() #
+      li() Materia
+      li() UV
+      li() Descripcion
+      li() Opciones

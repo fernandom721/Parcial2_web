@@ -7,6 +7,20 @@ a {
   color: #00B7FF;
 }
 
-.bg-warning{
-  background-color: blue;
+header{
+  background-color: rgba(255, 209, 133, 0.49);
+  width: 1440px;
+  height: 60px;
+  color: #47525E;
+  font-family: Berkshire Swash;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 400px;
+  text-align: center;
+}
+
+.cabecera{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
 }
